@@ -1,0 +1,162 @@
+body{
+    font-family: 'Montserrat';
+    text-align: center;
+    background: linear-gradient(200deg, red, black);
+    background-size: 400% 1%;
+    animation: anim 10s infinite;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    margin-left: -94.2%;
+    cursor: pointer;
+}
+.container{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.title{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.inputs{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+.first{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.second{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.operation{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn{
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+.sqrt{
+    background-color: green;
+    cursor: pointer;
+    padding: 20px;
+    width: 50%;
+    color: white;
+    transition: 0.5s;
+}
+.pow{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    padding: 20px;
+    width: 50%;
+    color: white;
+    transition: 0.5s;
+}
+
+.plus:hover{
+    transition: 0.5s;
+    background: linear-gradient(200deg, green, black);
+    animation: anim1 2s infinite;
+    
+}
+.minus:hover{
+    transition: 0.5s;
+    background: linear-gradient(200deg, rgb(255, 0, 0), black);
+    animation: anim1 2s infinite;
+}
+.sq:hover{
+    transition: 0.5s;
+    background: linear-gradient(200deg, rgb(0, 242, 255), black);
+    animation: anim1 2s infinite;
+}
+.del:hover{
+    transition: 0.5s;
+    background: linear-gradient(200deg, rgb(21, 0, 255), black);
+    animation: anim1 2s infinite;
+}
+.equal {
+    width: 100%;
+   background-color: black;
+    margin-top: 20px;
+    transition: 0.5s;
+    color: white;
+    border: 1px solid color rgb(18, 134, 147);
+    height: 50px;
+}
+.equal button{
+    width: 100%;
+   background-color: black;
+   color: white;
+   border: 1px solid color rgb(18, 134, 147);
+   transition: 0.5s;
+   height: 50px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+.equal p{
+    padding-top: 15px;
+}
+.equal p:hover{
+   color: black;
+}
+.equal button:hover{
+    transition: 0.5s;
+    background-color: rgb(18, 134, 147);
+}
+.answer-area{
+    background-color: white;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.answer h4{
+    font-size: 28px;
+}
+@keyframes anim {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+@keyframes anim1 {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
