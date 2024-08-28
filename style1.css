@@ -62,41 +62,33 @@ a{
 
 }
 .sqrt{
-    background-color: green;
+    background-color: rgb(0, 208, 255);
     cursor: pointer;
     padding: 20px;
-    width: 50%;
-    color: white;
-    transition: 0.5s;
-}
-.pow{
-    background-color: rgb(255, 0, 0);
-    cursor: pointer;
-    padding: 20px;
-    width: 50%;
+    width: 33.3%;
     color: white;
     transition: 0.5s;
 }
 
-.plus:hover{
+.pow{
+    background-color: rgb(0, 255, 17);
+    cursor: pointer;
+    padding: 20px;
+    width: 33.3%;
+    color: white;
     transition: 0.5s;
-    background: linear-gradient(200deg, green, black);
-    animation: anim1 2s infinite;
-    
 }
-.minus:hover{
+
+
+
+.sqrt:hover{
     transition: 0.5s;
-    background: linear-gradient(200deg, rgb(255, 0, 0), black);
+    background: linear-gradient(200deg, rgb(0, 208, 255), black);
     animation: anim1 2s infinite;
 }
-.sq:hover{
+.pow:hover{
     transition: 0.5s;
-    background: linear-gradient(200deg, rgb(0, 242, 255), black);
-    animation: anim1 2s infinite;
-}
-.del:hover{
-    transition: 0.5s;
-    background: linear-gradient(200deg, rgb(21, 0, 255), black);
+    background: linear-gradient(200deg, rgb(0, 255, 17), black);
     animation: anim1 2s infinite;
 }
 .equal {
