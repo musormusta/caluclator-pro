@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="script.js" defer></script>
+
 </head>
 <body>
 <a href="anotha.html"><button>Не хватает операций?</button></a>
@@ -17,11 +18,11 @@
             <h1>Калькулятор</h1>
         </div>
         <div class="inputs">
-            <input type="number" placeholder="Введите 1 число" class="first" id="input1" value="15">
-            <input type="number" placeholder="Введите 2 число" class="second" id="input2" value="1">
+            <input type="number" placeholder="Введите 1 число" class="first" id="input1" value=" ">
+            <input type="number" placeholder="Введите 2 число" class="second" id="input2" value=" ">
         </div>
         <div class="operation">
-            
+               <div class="pl-mn">
                 <button class="plus" id="plus">
                     +
                 </button>
@@ -30,13 +31,15 @@
                 <button class="minus" id="minus">
                     -
                 </button>
+            </div>
+            <div class="tm-dv">
                 <button class="sq" id="sq">
                     *
                 </button>
                 <button class="del" id="del">
                    /
                 </button>
-            
+            </div>
         </div>
         <div class="equal">
             <button id="submit">Посчитать</button>
@@ -46,8 +49,10 @@
             <div class="answer">
                 <h4>Результат:</h4>
                 <p id="result">
-
+                    
                 </p>
+                <p id="time" style="display: none;">5</p>
+
             </div>
         </div>
     </div>
