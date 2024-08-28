@@ -3,7 +3,6 @@ body{
     text-align: center;
     background: linear-gradient(200deg, red, black);
     background-size: 400% 1%;
-    animation: anim 10s infinite;
     
 }
 
@@ -24,7 +23,7 @@ a{
     padding: 20px;
 }
 .title{
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
@@ -54,6 +53,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-direction: column;
 }
 .btn{
     width: 45%;
@@ -154,25 +154,62 @@ a{
 .answer h4{
     font-size: 28px;
 }
-@keyframes anim {
-    0%{
-        background-position: 0% 50%;
+@media(max-width:800px){
+    .title{
+        font-size: 32px;
     }
-    50%{
-background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
+ .operation{
+    flex-direction: column;
+ }
+ .pl-mn, .tm-dv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+ }
+ .operation button{
+    width: 100%;
+ }
+}
+@media(max-width:650px){
+    .title{
+        font-size: 26px;
     }
 }
-@keyframes anim1 {
-    0%{
-        background-position: 0% 50%;
+@media(max-width:600px) {
+    .title{
+        font-size: 24px;
     }
-    50%{
-background-position: 100% 50%;
+}
+
+@media(max-width:500px){
+    .title{
+        font-size: 22px;
     }
-    100%{
-        background-position: 0% 50%;
+}
+@media(max-width:500px) {
+    .title{
+        font-size: 20px;
+    }
+    .operation button{
+        width: 100%;
+        flex-direction: row;
+
+    }
+}
+@media(max-width:450px){
+    .title{
+        font-size: 18px;
+    }
+}
+@media(max-width:400px) {
+    .title{
+        font-size: 16px;
+    }
+    .first::placeholder, .second::placeholder{
+        font-size: 14px;
+    }
+    .operation{
+        flex-direction: column;
     }
 }
